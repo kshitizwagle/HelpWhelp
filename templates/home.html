@@ -1,0 +1,330 @@
+{% extends "nav.html" %}
+{% load static %}
+<html lang="en">
+
+{% block head %}
+<title>Home</title>
+<link rel="stylesheet" href="{% static  'style/home.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
+{% endblock head%}
+
+{% block body %}
+<section class="welcome-sec">
+    <div class="bgimg">
+        <div class="container text-white headerset text-center">
+            <h2 class="text-white">Welcome to</h2>
+            <h1 class="text-white">HelpWhelp</h1>
+        </div>
+    </div>
+</section>
+<section class="container intro text-center glow">
+    <h1>INTRODUCTION</h1>
+
+    <div class="row rowsetting">
+        <div class="col-lg-4 col-md-4 col-sm-12 d-block m-auto">
+            <img src="{% static 'imgs/dogs.jpg' %}" class="card-img img02 img-fluid">
+            <h2>What is HelpWhelp?</h2>
+            <p>HelpWhelp is a web-based application that is designed with the goal to provide awareness of pet
+                adoption. HelpWhelp's objective is to provide street animals care they need by acting as a
+                platform where people can connect and post street animals and also adopt one.HelpWhelp is an absolute
+                playform
+                for everyone.</p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 d-block m-auto">
+            <img src="{% static 'imgs/sleepingcats.jpg' %}" class="card-img img02 img-fluid">
+            <h2>Why street animals?</h2>
+            <p>Overburdened shelters take in millions of stray, abused and lost animals every year, and by
+                adopting an animal, you're making room for others. Not only are you giving more animals a second
+                chance, but the cost of your adoption goes directly towards helping those shelters better care
+                for the animals they take in!</p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 d-block m-auto">
+            <img src="{% static 'imgs/manycats.jpg' %}" class="card-img img02 img-fluid">
+            <h2>Why HelpWhelp?</h2>
+            <p>Digital adoption platforms enable you to assign individual step-by-step guides or walkthroughs
+                based on various styles of learning, and take team members through all of your company
+                procedures. This also applies to training and the approach you use to create a knowledge base of
+                all your company information.</p>
+        </div>
+
+    </div>
+</section>
+<section class="get">
+    <div class="rl text-center glow">
+        <div class="container getstart">
+
+            <div class="section-heading start">
+                <h2>Get Started</h2>
+            </div>
+
+
+            <div class="row rowsetting">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="right-image">
+                        <img src="{% static 'imgs/bwdog.jpg' %}" class="card-img img03 img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="left-content">
+                        <h4>Wanna adopt a pet?</h4>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur
+                            similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem
+                            perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+                            consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium
+                            quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+                        <button><a href="/signup">Get Started</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row rowsetting">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="left-content">
+                        <h4>Who we are &amp; What we do?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur
+                            similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem
+                            perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+                            consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium
+                            quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="left-image">
+                        <!-- <img src="bunch.jpg" alt="">  -->
+                        <img src="{% static 'imgs/bunch.jpg' %}" class="card-img img03 img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row rowsetting">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="right-image">
+                        <!-- <img src="sleepingcats.jpg" alt="">  -->
+                        <img src="{% static 'imgs/dogcat.jpg' %}" class="card-img img03 img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="left-content">
+                        <h4>Who we are &amp; What we do?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur
+                            similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem
+                            perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+                            consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium
+                            quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="team my-5 text-center">
+    <div class="container">
+
+        <div class="text-center my-5">
+            <h1> Our Team </h1>
+        </div>
+
+        <div class="row rowsetting d-flex align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12 align-items-center">
+                <div class="card border-secondary">
+                    <img class="card-img-top imgp img-fluid img-responsive" src="{% static 'imgs/kshitiz1.jpg' %}"
+                        alt="bestware-img">
+                    <div class="card-body">
+                        <h4 class="card-title">Kshitiz Wagle</h4>
+                        <p class="card-text">Back-end, Front-end </p>
+                        <ul class="ms-auto mb-2 mb-lg-0 contact justify-content-around">
+                            <li class=" d-inline btn btn-sm glow">
+                                <a class="fblink" href="facebook.com"><img src="{% static 'imgs/fb.png' %}"
+                                        class="card-img img04 img-fluid"></a>
+                            </li>
+                            <li class=" d-inline btn btn-sm glow">
+                                <a class="gitlink" href="github.com"><img src="{% static 'imgs/github.png' %}"
+                                        class="card-img img04 img-fluid"></a>
+                            </li>
+                            <li class=" d-inline btn btn-sm glow">
+                                <a class="instalink" href="instagram.com"><img src="{% static 'imgs/insta.png' %}"
+                                        class="card-img img04 img-fluid"></a>
+                            </li>
+                            <li class=" d-inline btn btn-sm glow">
+                                <a class="discordlink" href="discord.com"><img src="{% static 'imgs/discord.svg' %}"
+                                        class="card-img img04 img-fluid"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 align-items-center">
+                <div class="card border-secondary">
+                    <img class="card-img-top imgp img-responsive" src="{% static 'imgs/prajwal1.jpg'%}" alt="Saddist">
+                    <div class="card-body">
+                        <h4 class="card-title">Prajwal Shrestha</h4>
+                        <p class="card-text">Front-end </p>
+                        <ul class="ms-auto mb-2 mb-lg-0 d-inline contact justify-content-around">
+                            <li class=" d-inline btn btn-sm glow">
+                                <a class="fblink" href="facebook.com"><img src="{% static 'imgs/fb.png' %}"
+                                        class="card-img img04 img-fluid"></a>
+                            </li>
+                            <li class="d-inline btn btn-sm  glow">
+                                <a class="gitlink" href="github.com"><img src="{% static 'imgs/github.png' %}"
+                                        class="card-img img04 img-fluid"></a>
+                            </li>
+                            <li class=" d-inline btn btn-sm glow">
+                                <a class="instalink" href="instagram.com"><img src="{% static 'imgs/insta.png' %}"
+                                        class="card-img img04 img-fluid"></a>
+                            </li>
+                            <li class=" d-inline btn btn-sm glow">
+                                <a class="discordlink" href="discord.com"><img src="{% static 'imgs/discord.svg' %}"
+                                        class="card-img img04 img-fluid"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="foot">
+    <!-- Footer -->
+    <footer class="text-center mt-5 text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none
+         d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>HelpWhelp
+                        </h6>
+
+                        <p>
+                            Lets save our street animals and provide them care they need.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Other sites
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Shelterpets</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">PetAdoption</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Saveanimals</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Adoptus</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            links
+                        </h6>
+                        <p>
+                            <a href="facebook.com" class="text-reset">facebook</a>
+                        </p>
+                        <p>
+                            <a href="instagram.com" class="text-reset">instagram</a>
+                        </p>
+                        <p>
+                            <a href="discord.com" class="text-reset">discord</a>
+                        </p>
+                        <p>
+                            <a href="titok.com" class="text-reset">tiktok.com</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Nepal, Lalitpur</p>
+                        <p>
+                            <i class="fas fa-email me-3"></i>
+                            HelpWhelp@gmail.com
+                        </p>
+                        <p><i class="fas fa-link me-3"></i> HelpWhelp.com</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://HelpWhelp.com/">HelpWhelp.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</div>
+{% endblock body %}
+
+</html>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

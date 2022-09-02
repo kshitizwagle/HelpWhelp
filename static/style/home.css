@@ -1,0 +1,140 @@
+.glow {
+    font-family: "Roboto Serif", sans-serif;
+}
+.welcome-sec{
+    height: 100%;
+    width: 100%;
+}
+.bgimg {
+    background-image: url("/static/imgs/catscloseup.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.headerset {
+    padding-top: 200px;
+    box-sizing: border-box;
+    color: rgb(0, 104, 64);
+}
+
+.headerset h2 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.headerset h1 {
+    font-size: 82px;
+    font-weight: bold;
+}
+
+.intro {
+    padding-top: 100px;
+    height: auto;
+}
+
+.intro h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.rowsetting {
+    margin: 80px 0px !important;
+}
+
+.rowsetting p {
+    padding: 10px;
+    color: #6c757d !important;
+}
+
+.rowsetting h2 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.img02 {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.rl {
+    padding: 100px 0px 60px;
+    background-color: rgb(229, 243, 237);
+}
+
+.rl h2 {
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.get {
+    height: auto;
+}
+
+.img03 {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.team {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    height: 800px;
+}
+
+.team h1 {
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.team h4 {
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.card {
+    height: 520px;
+    align-items: center;
+    border: 5px;
+    border-radius: 3px;
+    border-color: black;
+}
+
+.card-body {
+    padding-bottom: 20px;
+}
+
+.border-secondary {
+    border: 1px solid #133a1c;
+}
+
+.imgp {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.img04 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.contact li {
+    place-items: center normal;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact {
+    padding-right: 35px;
+}
+
+.foot {
+    padding-top: 40px;
+}

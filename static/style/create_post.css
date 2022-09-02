@@ -1,0 +1,14 @@
+.glow {
+  font-family: 'Roboto Serif', sans-serif;
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+

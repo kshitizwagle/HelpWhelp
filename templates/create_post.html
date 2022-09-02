@@ -1,0 +1,30 @@
+{% extends "nav.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static  'style/create_post.css' %}">
+<title>Create Post</title>
+{% endblock head %}
+
+{% block body %}
+    <div class="container">
+    <div class="text-center mt-5 logo glow">
+        <h1>Create Post</h1>
+    </div>
+    <form method="POST" class="row align-items-center" action="{% url 'create_post' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-3">
+          <div class="mb-3">
+            <input type="text" id="fname" name="name" class="form-control mb-3 mt-3 glow" placeholder="Name" />
+
+            <input type="number" id="age" name="age" class="form-control mb-3 mt-3 glow" placeholder="Estimated age in numbers" />
+
+            <textarea id="subject" name="description" class="form-control mb-3 mt-3 glow" placeholder="About the pet" style="height: 200px"></textarea>
+
+            <input type="file" id="img" name="image">
+          </div>
+          <button type="submit" class="btn btn-primary w-100 btn-block glow but">Submit</button>
+        </div>
+      </form>
+    </div>
+{% endblock body %}

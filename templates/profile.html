@@ -1,0 +1,18 @@
+{% extends "nav.html" %}
+{% load static %}
+
+{% block head %}
+<title>Profile</title>
+<link rel="stylesheet" type="text/css" href="{%  static 'style/profile.css' %}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock head %}
+
+{% block body %}
+<div class="card">
+  <h1>{{ user.username }}</h1>
+  <p><button>{{ user.email }}</button></p>
+  <p><a href="{% url 'change_password_page' %}"><button>Change Password</button></a></p>
+</div>
+{% endblock body %}
+
+<script src="https://kit.fontawesome.com/88918ee7bf.js" crossorigin="anonymous"></script>

@@ -1,0 +1,31 @@
+body {
+  background-color: #2c2f33;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #2c2f33;
+  max-width: 300px;
+  text-align: center;
+  display: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: white;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card>button:hover {
+  opacity: 0.7;
+}

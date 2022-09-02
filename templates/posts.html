@@ -1,0 +1,50 @@
+{% extends "nav.html" %}
+{% load static %}
+
+{% block head %}
+<title>Info</title>
+<link rel="stylesheet" type="text/css" href="{%  static 'style/posts.css' %}" />
+{% endblock head %}
+
+{% block body %}
+{% for post in posts %}
+<div class="container glow">
+    <div class="star">
+        <div class="imgcontainer">
+            <img src="{{ post.image }}" alt="Displaying Pic" height="200px" />
+        </div>
+
+        <div class="usr-detail">
+            <div class="data-group">
+                <i class="fa-solid fa-i"></i><strong><label class="usr text-white">Name: {{ post.name }}</label></strong>
+            </div>
+            <div class="data-group">
+                <i class="fa-solid fa-hashtag"></i><strong><a class="usr text-info" href="tel:{{ post.phone }}">Phone: {{ post.phone }}</a></strong>
+            </div>
+            <div class="data-group">
+                <i class="fa-solid fa-envelope"></i><strong><a class="usr text-info"
+                        href="mailto:{{ post.email }}">E-mail: {{ post.email }}</a></strong>
+            </div>
+            <div class="data-group">
+                <i class="fa-solid fa-location-dot"></i><strong><label class="usr text-white">Posted By: {{ post.username }}</label></strong>
+            </div>
+            <div class="data-group">
+                <small><i class="fa-solid fa-asterisk"></i><label class="usr text-muted">{{ post.posted_on }}</label></small>
+            </div>
+        </div>
+        {% if current_user == post.user %}
+        <div class="butt m-5">
+            <ul class="list-unstyled">
+                <button class="btn boston text-white m-2 btn-danger btn-sm">
+                    <a href="{% url 'delete_post' post.id %}">Delete</a>
+                </button>
+                </li>
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endfor %}
+{% endblock body %}
+
+<script src="https://kit.fontawesome.com/88918ee7bf.js" crossorigin="anonymous"></script>
