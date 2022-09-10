@@ -8,4 +8,8 @@ media/
 *.png
 *.jpeg
 *.jfif
-
+*.docx
+*.doc
+*.pdf
+*.PDF
+*.pptx
